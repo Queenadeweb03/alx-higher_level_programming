@@ -12,6 +12,6 @@ if __name__ == '__main__':
         line1 += ":"
     else:
         line1 += "s:"
-        print(line1)
+    print(line1)
     for i, arg in enumerate(args):
         print("{:d}: {:s}".format(i+1, arg))
