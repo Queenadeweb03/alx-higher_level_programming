@@ -1,3 +1,12 @@
 #!/usr/bin/python3
-def remove_char_at(str, n):
-    return (str[0:n] + str[n+1:] if n >= 0 else str)
+
+def remove_char_at(s, i):
+    """removes a character at index i"""
+    if i < 0:
+        return s
+    return s[:i] + s[i+1:]
+
+
+if __name__ == '__main__':
+    print(remove_char_at("Best School", 3))
+    print(remove_char_at("Chicago", 2))
